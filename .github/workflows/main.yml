@@ -23,7 +23,8 @@ jobs:
         run: msbuild NobodyClient.sln /p:Configuration=Release /p:Platform=x64
 
       - name: Upload DLL artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: nobody-client-dll
           path: Release\nobodyclient.dll
+
